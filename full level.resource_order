@@ -1,0 +1,7 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_goal","order":1,"path":"objects/obj_goal/obj_goal.yy",},
+    {"name":"spr_goal","order":1,"path":"sprites/spr_goal/spr_goal.yy",},
+  ],
+}
