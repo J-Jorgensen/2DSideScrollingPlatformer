@@ -45,7 +45,7 @@ if ((l7366C7F0_0 > 0))
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 3845563E
-		/// @DnDComment : jump$(13_10)
+		/// @DnDComment : jump over wall$(13_10)
 		/// @DnDParent : 500691FF
 		/// @DnDArgument : "expr" "-jump_speed"
 		/// @DnDArgument : "var" "move_y"
@@ -58,12 +58,21 @@ if ((l7366C7F0_0 > 0))
 	/// @DnDComment : gap in the floor?
 	/// @DnDParent : 7366C7F0
 	/// @DnDArgument : "x" "x + (30 * sign(move_x))"
-	/// @DnDArgument : "y" "+50"
-	/// @DnDArgument : "y_relative" "1"
+	/// @DnDArgument : "y" "y+50"
 	/// @DnDArgument : "object" "collision_tilemap"
-	var l2064447B_0 = instance_place(x + (30 * sign(move_x)), y + +50, [collision_tilemap]);
-	if ((l2064447B_0 > 0))
+	/// @DnDArgument : "not" "1"
+	var l2064447B_0 = instance_place(x + (30 * sign(move_x)), y+50, [collision_tilemap]);
+	if (!(l2064447B_0 > 0))
 	{
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 3832AE52
+		/// @DnDComment : reverse movement
+		/// @DnDParent : 2064447B
+		/// @DnDArgument : "expr" "move_x *-1"
+		/// @DnDArgument : "var" "move_x"
+		move_x = move_x *-1;
+	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 6C074A41
