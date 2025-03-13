@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"full level 2",
   "resources":[
@@ -51,6 +51,7 @@
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Story","path":"rooms/Story/Story.yy",},},
+    {"id":{"name":"cartoon_jump_6462","path":"sounds/cartoon_jump_6462/cartoon_jump_6462.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},},
     {"id":{"name":"spr_enemy_1_idle","path":"sprites/spr_enemy_1_idle/spr_enemy_1_idle.yy",},},
