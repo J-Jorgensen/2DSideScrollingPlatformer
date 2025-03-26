@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"ground",
+  "%Name":"kill_zone",
   "eventList":[],
   "managed":true,
-  "name":"ground",
+  "name":"kill_zone",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite2",
-    "path":"sprites/Sprite2/Sprite2.yy",
+    "name":"spr_killzone",
+    "path":"sprites/spr_killzone/spr_killzone.yy",
   },
   "spriteMaskId":null,
   "visible":true,

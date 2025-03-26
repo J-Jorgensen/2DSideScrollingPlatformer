@@ -59,6 +59,25 @@ if ((l7366C7F0_0 > 0))
 	/// @DnDArgument : "var" "move_y"
 	move_y = 0;
 
+	/// @DnDAction : YoYo Games.Gamepad.If_Gamepad_Button_Pressed
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 142B235A
+	/// @DnDParent : 7366C7F0
+	/// @DnDArgument : "btn" "gp_face1"
+	var l142B235A_0 = 0;
+	var l142B235A_1 = gp_face1;
+	if(gamepad_is_connected(l142B235A_0) && gamepad_button_check_pressed(l142B235A_0, l142B235A_1))
+	{
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 3845563E
+		/// @DnDComment : the jump button$(13_10)
+		/// @DnDParent : 142B235A
+		/// @DnDArgument : "expr" "-jump_speed"
+		/// @DnDArgument : "var" "move_y"
+		move_y = -jump_speed;
+	}
+
 	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
 	/// @DnDVersion : 1
 	/// @DnDHash : 478367F6
@@ -69,7 +88,8 @@ if ((l7366C7F0_0 > 0))
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
-		/// @DnDHash : 3845563E
+		/// @DnDHash : 752939E0
+		/// @DnDComment : the jump button$(13_10)
 		/// @DnDParent : 478367F6
 		/// @DnDArgument : "expr" "-jump_speed"
 		/// @DnDArgument : "var" "move_y"
